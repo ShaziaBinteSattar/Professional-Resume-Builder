@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #2a2a3a;
+    /* Dark grayish blue background */
+    position: sticky;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    z-index: 1000;
+}
+
+/* Logo styling */
+nav .logo img {
+    width: 60px;
+}
+
+/* Navigation links */
+nav .navigation {
+    display: flex;
+    gap: 30px;
+}
+
+/* Navigation links styling */
+.navigation a {
+    text-decoration: none;
+    color: #e4e4e4;
+    /* Soft light gray text */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* 
+/* Optional: Hide navigation for mobile or small screens */
+/* .navigation.hide { */
+/* display: none; */
+/* } */
+
+
+body {
+    background-color: #181818;
+    /* Dark background color */
+    color: #e0e0e0;
+    /* Light gray text color for contrast */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /* Remove default margin */
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    /* Clean, modern font */
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #2a2a3a; /* Dark gray background for the navbar */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 60px;
+}
+
+nav .navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray text for navbar */
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #7c85d1; /* Soft purple-blue hover effect */
+    transform: translateY(-2px);
+    letter-spacing: 1px;
+}
+
+/* Body Styling */
+body {
+    background-color: #fff; /* White background for the body */
+    color: #333333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #f8f8f8; /* Light gray background for container */
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side */
+.container .left_side {
+    position: relative;
+    background-color: #2c2c2c; /* Blue background for left side */
+    padding: 40px;
+}
+
+/* Profile text */
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBox {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #f1f1f1; /* Light text color */
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+/* Contact Info */
+.contact-info {
+    padding-top: 40px;
+}
+
+.contact-info .title {
+    color: #fff; /* White text for section titles */
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.education,
+.education h4 {
+    color: rgb(204, 204, 204);
+    font-weight: normal;
+}
+
+.contact-info ul {
+    position: relative;
+}
+
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 20px;
+    font-size: 16px;
+    color: #b0e0ec; /* Soft light blue */
+}
+
+.contact-info ul li span {
+    color: #d3d3d3; /* Light gray for text */
+    font-weight: 300;
+}
+
+.contact-info ul li a.text {
+    text-decoration: none;
+    color: #d3d3d3;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a.text:hover {
+    color: #7c85d1; /* Soft purple-blue on hover */
+}
+
+/* Right Side */
+.container .right_side {
+    position: relative;
+    background-color: #e5e4e4; /* White background for right side */
+    padding: 40px;
+    color: #333333; /* Dark text for readability */
+}
+
+/* About */
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #333333; /* Dark color for titles */
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666666; /* Slightly lighter gray for body text */
+}
+
+/* Experience */
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 ul {
+    text-transform: uppercase;
+    color: #848c90; /* Gray for year labels */
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #333333; /* Dark gray for job titles */
+    font-size: 16px;
+}
+
+
+/* Fix bullet point color in the teacher section */
+.text ul li {
+    color: #646363;
+}
+
+/* Skills */
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #333333; /* Dark color for skill names */
+    font-weight: 500;
+}
+
+.skills .box .percent2 {
+    position: relative;
+    background-color: #d79e9d; /* Peach for progress bars */
+    width: 100%;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.skills .box .percent2 div {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #827e7e; /* Light gray background for progress bars */
+}
+
+/* Language */
+.contact-info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #827e7e; /* Light gray background for progress bars */
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #097692; /* Blue for progress bars */
+}
+
+/* Buttons */
+.btn-div {
+    display: flex;
+    gap: 20px;
+}
+
+.download-btn,
+.edit-btn {
+    background-color: #007acc; /* Blue for buttons */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover,
+.edit-btn:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+}
+
+.download-btn {
+    background-color: #007acc;
+}
+
+.edit-btn {
+    background-color: #005fa3; /* Darker blue for the edit button */
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .container {
+        margin: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .left_side,
+    .right_side {
+        padding: 20px;
+    }
+
+    .profileText h2 {
+        font-size: 1.2em;
+    }
+
+    .download-btn,
+    .edit-btn {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+    .navigation {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .navigation a {
+        margin: 0 auto;
+        font-size: 11px;
+    }
+
+    .profileText .imgBox {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profileText h2 {
+        font-size: 1em;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .skills .box {
+        grid-template-columns: 1fr;
+    }
+
+    .download-btn,
+    .edit-btn {
+        width: 100%;
+        font-size: 12px;
+    }
+}
